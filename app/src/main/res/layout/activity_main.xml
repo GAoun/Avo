@@ -1,53 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bg1">
 
+    <!--RIGHT SIDE-->
+
     <RelativeLayout
         android:layout_width="240dp"
         android:layout_height="170dp"
         android:id="@+id/relativeLayout2"
         android:background="@mipmap/logo"
-        android:layout_alignTop="@+id/relativeLayout"
-        android:layout_alignParentEnd="true"></RelativeLayout>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"></RelativeLayout>
 
     <RelativeLayout
         android:layout_width="240dp"
-        android:layout_height="650dp"
-        android:layout_marginTop="117dp"
-        android:id="@+id/relativeLayout3"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_alignParentEnd="true">
+        android:layout_height="537dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout8">
 
         <ListView
             android:id="@+id/categories"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#fff"></ListView>
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="520dp"
-        android:layout_height="1120dp"
-        android:layout_marginBottom="14dp"
-        android:layout_above="@+id/footer"
-        android:background="@mipmap/door"
-        android:layout_toStartOf="@+id/relativeLayout2"
-        android:layout_marginEnd="12dp"
-        android:id="@+id/relativeLayout"></RelativeLayout>
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:id="@+id/relativeLayout9"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_alignEnd="@+id/relativeLayout10"
+        android:layout_marginEnd="11dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text=" لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا لوكاندا"/>
+
+    </RelativeLayout>
 
 
     <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/english"
+        android:id="@+id/relativeLayout10"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentEnd="true"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:background="@mipmap/hebrew"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/relativeLayout11"
+        android:layout_alignTop="@+id/relativeLayout10"
+        android:layout_toStartOf="@+id/relativeLayout10"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:background="@mipmap/arabic"
+        android:layout_alignTop="@+id/relativeLayout11"
+        android:layout_alignStart="@+id/relativeLayout9"
+        android:id="@+id/relativeLayout12"></RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/footer"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
         android:background="@mipmap/avocadowhite"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/relativeLayout8"
+        android:layout_alignStart="@+id/relativeLayout12"
+        android:layout_alignEnd="@+id/relativeLayout9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="مينو لوكندة"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+
+
+    <!--LEFT SIDE-->
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_toStartOf="@+id/relativeLayout2"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/relativeLayout14"
+        android:background="@mipmap/food1"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="330dp"
+        android:id="@+id/relativeLayout22"
+        android:layout_above="@+id/relativeLayout15"
+        android:layout_alignStart="@+id/relativeLayout15"
+        android:background="@mipmap/drink4"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/relativeLayout15"
+        android:background="@mipmap/food6"
+        android:layout_below="@+id/relativeLayout14"
+        android:layout_toStartOf="@+id/footer"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="330dp"
+        android:id="@+id/relativeLayout19"
+        android:background="@mipmap/lemonade"
+        android:layout_alignTop="@+id/relativeLayout15"
+        android:layout_alignEnd="@+id/relativeLayout14"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="520dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/relativeLayout17"
+        android:background="@mipmap/food3"
+        android:layout_below="@+id/relativeLayout15"
+        android:layout_alignStart="@+id/relativeLayout15"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="255dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/relativeLayout18"
+        android:background="@mipmap/dessert1"
+        android:layout_below="@+id/relativeLayout17"
+        android:layout_alignStart="@+id/relativeLayout17"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="255dp"
+        android:layout_height="210dp"
+        android:id="@+id/relativeLayout21"
+        android:background="@mipmap/dessert3"
+        android:layout_alignTop="@+id/relativeLayout18"
+        android:layout_alignEnd="@+id/relativeLayout17"></RelativeLayout>
 </RelativeLayout>

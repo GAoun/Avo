@@ -18,15 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        categories.add("فطور لوكندا");
-        categories.add("سلطات لوكندا");
-        categories.add("ايطاليا في لوكندا");
-        categories.add("فوكاتشا لوكندا");
-        categories.add("منوعات لوكندا");
+        categories.add("فطور لوكندة");
+        categories.add("سلطات لوكندة");
+        categories.add("ايطاليا في لوكندة");
+        categories.add("فوكاتشا لوكندة");
+        categories.add("منوعات لوكندة");
         categories.add("باستا");
         categories.add("وجبات رئيسية");
         categories.add("وجبات اطفال");
-        categories.add("عصائر لوكندا");
+        categories.add("عصائر لوكندة");
         categories.add("شاي");
         categories.add("مشروبات ساخنة");
 
